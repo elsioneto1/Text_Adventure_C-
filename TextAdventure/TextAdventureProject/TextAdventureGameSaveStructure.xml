@@ -1,0 +1,82 @@
+<LoadStructure>
+    <LevelData rows="3" columns="1">
+        <RoomData rowId="0" rowColumn="0" state="1">
+            <Items>
+                <Static/>
+                <Dynamic/>
+            </Items>
+            <Npcs>
+                <Fightable/>
+                <Common>
+                    <Npc id="PROFESSOR" interactable="1" solvingItem="BLACK_KEY" rowUnlock="2" columnUnlock="0">
+                        <Dialogs>
+                            <UNLOCK_DOOR_ key="UNLOCK_DOOR_" rowUnlock="2" columnUnlock="0">Oh, okay! I'just open the door then!</UNLOCK_DOOR_>
+                            <DEFAULT>Be more specific</DEFAULT>
+                            <BABYLON>It's where we are!</BABYLON>
+                            <BYE>I'll be here, take your time!</BYE>
+                            <CRY>See, you are dumb. Sorry. But perspectives are good! This means that you can learn a bunch of stuff, and I'll teach you how to do it. At least a litte bit. See, you have some evolution levels that you can raise. Say BYE to me and check your level by saying DISPLAY to yourself. And then come back here asking me about the MOVEMENTS.</CRY>
+                            <ENTRY>Hello! Welcome to the world!</ENTRY>
+                            <HELLO>Hello There! I'm the professor. I know you can have a bunch of questions about whats happening here. I'll try to explain them. We have so much to talk about, oh my! Let's start with the basics. 
+You are Foo. I know, silly name, but there's a reason for it, trust me. This is the Babylon, the pyramidal world. It can be a little bit messy here, that's why you have a MAP. You are new here, so I have to explain some things. You don;t have so much world experience, sorry. You're, technically dumb, if you don't believe try to write more than two words and CRY for me.</HELLO>
+                            <MAP>Oh, you're talking to me, so you can't access your map! You have to say BYE first. We are in a polite world, right? </MAP>
+                            <MEMETIC>Memetic is a concept. A concept created by someone to try to define how our information spreads around people and zzzz. Whats really important here it's that you can LEARN through this! Don't you believe me?? try to LEARN this : move </MEMETIC>
+                            <MEMETICS>Memetic is a concept. A concept created by someone to try to define how our information spreads around people and zzzz. Whats really important here it's that you can LEARN through this! Don't you believe me?? try to LEARN this : move </MEMETICS>
+                            <MOVE>It's so funny see you talking with just one word hahah. Sorry to mock that, but it's just funny! haha Ok, ok. You saw that you can't move move, your current Movement level is, ahn. Zero. You are not-moving rock. But lets improve this. Do you know the concept of MEMETICS?</MOVE>
+                            <MOVEMENT>It's so funny see you talking with just one word hahah. Sorry to mock that, but it's just funny! haha Ok, ok. You saw that you can't move move, your current Movement level is, ahn. Zero. You are not-moving rock. But lets improve this. Do you know the concept of MEMETICS?</MOVEMENT>
+                            <MOVEMENTS>It's so funny see you talking with just one word hahah. Sorry to mock that, but it's just funny! haha Ok, ok. You saw that you can't move move, your current Movement level is, ahn. Zero. You are not-moving rock. But lets improve this. Do you know the concept of MEMETICS?</MOVEMENTS>
+                            <TESTE>I am alive</TESTE>
+                            <raise>Yes! I bet that you may be feeling a great sense of improvement right now! See, now you can move through NORTH, SOUTH, EAST and WEST. Give it a try! Try to PICK up the key on the next door! If you have any doubt just cry for HELP! 
+              Oh yes! Remember this! Everytime you see the words SPEAK, COMBAT and MOVE you can learn them to raise you experience! That's how the world goes, you learn from others! Pretty nice, right?</raise>
+                            <raised>Ohh you cheater! You can't level up again from someone that leveled you! Nice try, though.</raised>
+                        </Dialogs>
+                    </Npc>
+                </Common>
+            </Npcs>
+            <Descriptions>
+                <ENTRY>A large room maybe I could SEE the ROOM better?</ENTRY>
+                <ROOM>A large and wide room.
+        There's a pathway to the NORTH.
+Everything is so white that you can`t see the borders.
+Ahead of you there's a black door, highlited from the rest of the room.
+Maybe I can TALK with someone here...
+
+        </ROOM>
+            </Descriptions>
+        </RoomData>
+        <RoomData rowId="1" rowColumn="0" state="1">
+            <Items>
+                <Static>
+                    <BLACK_DOOR solvingItem="BLACK_KEY" rowUnlock="2" columnUnlock="0">A big. Scary. Black door.</BLACK_DOOR>
+                </Static>
+                <Dynamic>
+                    <BLACK_KEY> A black key. Maybe opens the door. Should I PICK it?</BLACK_KEY>
+                </Dynamic>
+            </Items>
+            <Npcs>
+                <Fightable/>
+                <Common/>
+            </Npcs>
+            <Descriptions>
+                <BLACK_DOOR>A big. Scary. Black door.</BLACK_DOOR>
+                <BLACK_KEY> A black key. Maybe opens the door. Should I PICK it?</BLACK_KEY>
+                <ENTRY>A Large white Room. </ENTRY>
+                <ROOM>A cool place</ROOM>
+            </Descriptions>
+        </RoomData>
+        <RoomData rowId="2" rowColumn="0" state="0" final="1" finalDirection="NORTH">
+            <Items>
+                <Static/>
+                <Dynamic/>
+            </Items>
+            <Npcs>
+                <Fightable/>
+                <Common/>
+            </Npcs>
+            <Descriptions>
+                <ENTRY>A strange dark room with a pathway to the north.</ENTRY>
+                <ROOM>It's dark here, with a little gap of light ahead.</ROOM>
+            </Descriptions>
+        </RoomData>
+    </LevelData>
+    <Player currentFloor="1" currentRow="0" currentColumn="0" speakLevel="1" combatLevel="1" moveLevel="0"/>
+</LoadStructure>

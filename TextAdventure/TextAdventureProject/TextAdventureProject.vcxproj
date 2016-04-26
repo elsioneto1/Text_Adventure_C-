@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8F227C10-4711-4AA1-BEAF-5944C8FA7861}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>TextAdventureProject</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\externallibs\tinyXML;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\ExternalLibs\Lua\lapi.c" />
+    <ClCompile Include="..\ExternalLibs\Lua\lauxlib.c" />
+    <ClCompile Include="..\ExternalLibs\Lua\lbaselib.c" />
+    <ClCompile Include="..\ExternalLibs\Lua\lbitlib.c" />
+    <ClCompile Include="..\ExternalLibs\Lua\lcode.c" />
+    <ClCompile Include="..\ExternalLibs\Lua\lcorolib.c" />
+    <ClCompile Include="..\ExternalLibs\Lua\lctype.c" />
+    <ClCompile Include="..\ExternalLibs\Lua\ldblib.c" />
+    <ClCompile Include="..\ExternalLibs\Lua\ldebug.c" />
+    <ClCompile Include="..\ExternalLibs\Lua\ldo.c" />
+    <ClCompile Include="..\ExternalLibs\Lua\ldump.c" />
+    <ClCompile Include="..\ExternalLibs\Lua\lfunc.c" />
+    <ClCompile Include="..\ExternalLibs\Lua\lgc.c" />
+    <ClCompile Include="..\ExternalLibs\Lua\linit.c" />
+    <ClCompile Include="..\ExternalLibs\Lua\liolib.c" />
+    <ClCompile Include="..\ExternalLibs\Lua\llex.c" />
+    <ClCompile Include="..\ExternalLibs\Lua\lmathlib.c" />
+    <ClCompile Include="..\ExternalLibs\Lua\lmem.c" />
+    <ClCompile Include="..\ExternalLibs\Lua\loadlib.c" />
+    <ClCompile Include="..\ExternalLibs\Lua\lobject.c" />
+    <ClCompile Include="..\ExternalLibs\Lua\lopcodes.c" />
+    <ClCompile Include="..\ExternalLibs\Lua\loslib.c" />
+    <ClCompile Include="..\ExternalLibs\Lua\lparser.c" />
+    <ClCompile Include="..\ExternalLibs\Lua\lstate.c" />
+    <ClCompile Include="..\ExternalLibs\Lua\lstring.c" />
+    <ClCompile Include="..\ExternalLibs\Lua\lstrlib.c" />
+    <ClCompile Include="..\ExternalLibs\Lua\ltable.c" />
+    <ClCompile Include="..\ExternalLibs\Lua\ltablib.c" />
+    <ClCompile Include="..\ExternalLibs\Lua\ltm.c" />
+    <ClCompile Include="..\ExternalLibs\Lua\LuaState.cpp" />
+    <ClCompile Include="..\ExternalLibs\Lua\lundump.c" />
+    <ClCompile Include="..\ExternalLibs\Lua\lutf8lib.c" />
+    <ClCompile Include="..\ExternalLibs\Lua\lvm.c" />
+    <ClCompile Include="..\ExternalLibs\Lua\lzio.c" />
+    <ClCompile Include="..\ExternalLibs\tinyXML\tinyxml2.cpp" />
+    <ClCompile Include="Common.cpp" />
+    <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="Fightable_NPC.cpp" />
+    <ClCompile Include="FileLoader.cpp" />
+    <ClCompile Include="GameLogic.cpp" />
+    <ClCompile Include="Inventory.cpp" />
+    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="Item_Dynamic.cpp" />
+    <ClCompile Include="Item_Static.cpp" />
+    <ClCompile Include="Level.cpp" />
+    <ClCompile Include="LevelUpManager.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="NPC.cpp" />
+    <ClCompile Include="Parser.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Room.cpp" />
+    <ClCompile Include="SaveLoadManager.cpp" />
+    <ClCompile Include="Sword.cpp" />
+    <ClCompile Include="Weapon.cpp" />
+    <ClCompile Include="Whip.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\ExternalLibs\Lua\lapi.h" />
+    <ClInclude Include="..\ExternalLibs\Lua\lauxlib.h" />
+    <ClInclude Include="..\ExternalLibs\Lua\lcode.h" />
+    <ClInclude Include="..\ExternalLibs\Lua\lctype.h" />
+    <ClInclude Include="..\ExternalLibs\Lua\ldebug.h" />
+    <ClInclude Include="..\ExternalLibs\Lua\ldo.h" />
+    <ClInclude Include="..\ExternalLibs\Lua\lfunc.h" />
+    <ClInclude Include="..\ExternalLibs\Lua\lgc.h" />
+    <ClInclude Include="..\ExternalLibs\Lua\llex.h" />
+    <ClInclude Include="..\ExternalLibs\Lua\llimits.h" />
+    <ClInclude Include="..\ExternalLibs\Lua\lmem.h" />
+    <ClInclude Include="..\ExternalLibs\Lua\lobject.h" />
+    <ClInclude Include="..\ExternalLibs\Lua\lopcodes.h" />
+    <ClInclude Include="..\ExternalLibs\Lua\lparser.h" />
+    <ClInclude Include="..\ExternalLibs\Lua\lprefix.h" />
+    <ClInclude Include="..\ExternalLibs\Lua\lstate.h" />
+    <ClInclude Include="..\ExternalLibs\Lua\lstring.h" />
+    <ClInclude Include="..\ExternalLibs\Lua\ltable.h" />
+    <ClInclude Include="..\ExternalLibs\Lua\ltm.h" />
+    <ClInclude Include="..\ExternalLibs\Lua\lua.h" />
+    <ClInclude Include="..\ExternalLibs\Lua\lua.hpp" />
+    <ClInclude Include="..\ExternalLibs\Lua\luaconf.h" />
+    <ClInclude Include="..\ExternalLibs\Lua\lualib.h" />
+    <ClInclude Include="..\ExternalLibs\Lua\LuaState.h" />
+    <ClInclude Include="..\ExternalLibs\Lua\lundump.h" />
+    <ClInclude Include="..\ExternalLibs\Lua\lvm.h" />
+    <ClInclude Include="..\ExternalLibs\Lua\lzio.h" />
+    <ClInclude Include="..\ExternalLibs\tinyXML\tinyxml2.h" />
+    <ClInclude Include="Common.h" />
+    <ClInclude Include="Entity.h" />
+    <ClInclude Include="Fightable_NPC.h" />
+    <ClInclude Include="FileLoader.h" />
+    <ClInclude Include="GameLogic.h" />
+    <ClInclude Include="IAttack.h" />
+    <ClInclude Include="IItemInteractable.h" />
+    <ClInclude Include="Inventory.h" />
+    <ClInclude Include="Italk.h" />
+    <ClInclude Include="iTalkNPC.h" />
+    <ClInclude Include="Item.h" />
+    <ClInclude Include="Item_Dynamic.h" />
+    <ClInclude Include="Item_Static.h" />
+    <ClInclude Include="Level.h" />
+    <ClInclude Include="LevelUpManager.h" />
+    <ClInclude Include="NPC.h" />
+    <ClInclude Include="Parser.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="Room.h" />
+    <ClInclude Include="SaveLoadManager.h" />
+    <ClInclude Include="Sword.h" />
+    <ClInclude Include="Weapon.h" />
+    <ClInclude Include="Whip.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\Resources\TextAdventureGame.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

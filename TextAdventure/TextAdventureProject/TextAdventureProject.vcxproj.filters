@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Libs">
+      <UniqueIdentifier>{bccd1ae2-907b-425e-91a1-23408c705e72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\tinyxml">
+      <UniqueIdentifier>{10ed7657-6e60-40d9-8359-c6716c94d03b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\Lua">
+      <UniqueIdentifier>{9d8a2205-ebc0-4a28-bc60-ac706b4c2263}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLogic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveLoadManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FileLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Room.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Item.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Weapon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sword.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Whip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Common.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Inventory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NPC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Fightable_NPC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Level.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExternalLibs\tinyXML\tinyxml2.cpp">
+      <Filter>Libs\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExternalLibs\Lua\lapi.c">
+      <Filter>Libs\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExternalLibs\Lua\lauxlib.c">
+      <Filter>Libs\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExternalLibs\Lua\lbaselib.c">
+      <Filter>Libs\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExternalLibs\Lua\lbitlib.c">
+      <Filter>Libs\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExternalLibs\Lua\lcode.c">
+      <Filter>Libs\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExternalLibs\Lua\lcorolib.c">
+      <Filter>Libs\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExternalLibs\Lua\lctype.c">
+      <Filter>Libs\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExternalLibs\Lua\ldblib.c">
+      <Filter>Libs\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExternalLibs\Lua\ldebug.c">
+      <Filter>Libs\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExternalLibs\Lua\ldo.c">
+      <Filter>Libs\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExternalLibs\Lua\ldump.c">
+      <Filter>Libs\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExternalLibs\Lua\lfunc.c">
+      <Filter>Libs\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExternalLibs\Lua\lgc.c">
+      <Filter>Libs\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExternalLibs\Lua\linit.c">
+      <Filter>Libs\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExternalLibs\Lua\liolib.c">
+      <Filter>Libs\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExternalLibs\Lua\llex.c">
+      <Filter>Libs\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExternalLibs\Lua\lmathlib.c">
+      <Filter>Libs\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExternalLibs\Lua\lmem.c">
+      <Filter>Libs\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExternalLibs\Lua\loadlib.c">
+      <Filter>Libs\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExternalLibs\Lua\lobject.c">
+      <Filter>Libs\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExternalLibs\Lua\lopcodes.c">
+      <Filter>Libs\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExternalLibs\Lua\loslib.c">
+      <Filter>Libs\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExternalLibs\Lua\lparser.c">
+      <Filter>Libs\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExternalLibs\Lua\lstate.c">
+      <Filter>Libs\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExternalLibs\Lua\lstring.c">
+      <Filter>Libs\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExternalLibs\Lua\lstrlib.c">
+      <Filter>Libs\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExternalLibs\Lua\ltable.c">
+      <Filter>Libs\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExternalLibs\Lua\ltablib.c">
+      <Filter>Libs\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExternalLibs\Lua\ltm.c">
+      <Filter>Libs\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExternalLibs\Lua\LuaState.cpp">
+      <Filter>Libs\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExternalLibs\Lua\lundump.c">
+      <Filter>Libs\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExternalLibs\Lua\lutf8lib.c">
+      <Filter>Libs\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExternalLibs\Lua\lvm.c">
+      <Filter>Libs\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExternalLibs\Lua\lzio.c">
+      <Filter>Libs\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelUpManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Item_Dynamic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Item_Static.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameLogic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SaveLoadManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Room.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Item.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Weapon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sword.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Whip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Italk.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IAttack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NPC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Fightable_NPC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Level.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExternalLibs\tinyXML\tinyxml2.h">
+      <Filter>Libs\tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExternalLibs\Lua\lapi.h">
+      <Filter>Libs\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExternalLibs\Lua\lauxlib.h">
+      <Filter>Libs\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExternalLibs\Lua\lcode.h">
+      <Filter>Libs\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExternalLibs\Lua\lctype.h">
+      <Filter>Libs\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExternalLibs\Lua\ldebug.h">
+      <Filter>Libs\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExternalLibs\Lua\ldo.h">
+      <Filter>Libs\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExternalLibs\Lua\lfunc.h">
+      <Filter>Libs\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExternalLibs\Lua\lgc.h">
+      <Filter>Libs\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExternalLibs\Lua\llex.h">
+      <Filter>Libs\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExternalLibs\Lua\llimits.h">
+      <Filter>Libs\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExternalLibs\Lua\lmem.h">
+      <Filter>Libs\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExternalLibs\Lua\lobject.h">
+      <Filter>Libs\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExternalLibs\Lua\lopcodes.h">
+      <Filter>Libs\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExternalLibs\Lua\lparser.h">
+      <Filter>Libs\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExternalLibs\Lua\lprefix.h">
+      <Filter>Libs\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExternalLibs\Lua\lstate.h">
+      <Filter>Libs\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExternalLibs\Lua\lstring.h">
+      <Filter>Libs\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExternalLibs\Lua\ltable.h">
+      <Filter>Libs\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExternalLibs\Lua\ltm.h">
+      <Filter>Libs\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExternalLibs\Lua\lua.h">
+      <Filter>Libs\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExternalLibs\Lua\lua.hpp">
+      <Filter>Libs\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExternalLibs\Lua\luaconf.h">
+      <Filter>Libs\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExternalLibs\Lua\lualib.h">
+      <Filter>Libs\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExternalLibs\Lua\LuaState.h">
+      <Filter>Libs\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExternalLibs\Lua\lundump.h">
+      <Filter>Libs\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExternalLibs\Lua\lvm.h">
+      <Filter>Libs\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExternalLibs\Lua\lzio.h">
+      <Filter>Libs\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="iTalkNPC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelUpManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Item_Dynamic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Item_Static.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IItemInteractable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\Resources\TextAdventureGame.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>

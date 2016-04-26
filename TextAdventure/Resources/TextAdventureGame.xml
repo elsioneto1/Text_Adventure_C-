@@ -1,0 +1,438 @@
+//ALL IDS MUST BE IN CAPITAL CASE
+// room states  0 = locked 1 - open 2 - climb - 3 unrecheable
+// Room size differs from room index.
+<TextAdventure>
+	<Level id = "1" Rows = "3" Columns = "1" playerStartingRow ="0" playerStartingColumn="0">
+		<Room Row = "0" Column = "0" state = "1" >
+			<Description>
+        <ENTRY>A large room maybe I could SEE the ROOM better?</ENTRY>
+				<ROOM>A large and wide room.
+        There's a pathway to the NORTH.
+Everything is so white that you can`t see the borders.
+Ahead of you there's a black door, highlited from the rest of the room.
+Maybe I can TALK with someone here...
+
+        </ROOM>
+					
+			</Description>
+			<Npcs>
+				<Fightable>
+				
+				</Fightable>
+				<Common>
+					<Npc id = "PROFESSOR" interactable="1" solvingItem ="BLACK_KEY" rowUnlock="2" columnUnlock="0">
+						<Dialogs>
+              <DEFAULT>Be more specific</DEFAULT>
+              <raise>Yes! I bet that you may be feeling a great sense of improvement right now! See, now you can move through NORTH, SOUTH, EAST and WEST. Give it a try! Try to PICK up the key on the next door! If you have any doubt just cry for HELP! 
+              Oh yes! Remember this! Everytime you see the words SPEAK, COMBAT and MOVE you can learn them to raise you experience! That's how the world goes, you learn from others! Pretty nice, right?</raise>
+              <raised>Ohh you cheater! You can't level up again from someone that leveled you! Nice try, though.</raised>
+							<ENTRY>Hello! Welcome to the world!</ENTRY>
+							<HELLO>Hello There! I'm the professor. I know you can have a bunch of questions about whats happening here. I'll try to explain them. We have so much to talk about, oh my! Let's start with the basics. 
+You are Foo. I know, silly name, but there's a reason for it, trust me. This is the Babylon, the pyramidal world. It can be a little bit messy here, that's why you have a MAP. You are new here, so I have to explain some things. You don;t have so much world experience, sorry. You're, technically dumb, if you don't believe try to write more than two words and CRY for me.</HELLO>
+              <CRY>See, you are dumb. Sorry. But perspectives are good! This means that you can learn a bunch of stuff, and I'll teach you how to do it. At least a litte bit. See, you have some evolution levels that you can raise. Say BYE to me and check your level by saying DISPLAY to yourself. And then come back here asking me about the MOVEMENTS.</CRY>
+              <MOVE>It's so funny see you talking with just one word hahah. Sorry to mock that, but it's just funny! haha Ok, ok. You saw that you can't move move, your current Movement level is, ahn. Zero. You are not-moving rock. But lets improve this. Do you know the concept of MEMETICS?</MOVE>
+              <MOVEMENT>It's so funny see you talking with just one word hahah. Sorry to mock that, but it's just funny! haha Ok, ok. You saw that you can't move move, your current Movement level is, ahn. Zero. You are not-moving rock. But lets improve this. Do you know the concept of MEMETICS?</MOVEMENT>
+              <MOVEMENTS>It's so funny see you talking with just one word hahah. Sorry to mock that, but it's just funny! haha Ok, ok. You saw that you can't move move, your current Movement level is, ahn. Zero. You are not-moving rock. But lets improve this. Do you know the concept of MEMETICS?</MOVEMENTS>
+
+              <MEMETICS>Memetic is a concept. A concept created by someone to try to define how our information spreads around people and zzzz. Whats really important here it's that you can LEARN through this! Don't you believe me?? try to LEARN this : move </MEMETICS>
+              <MEMETIC>Memetic is a concept. A concept created by someone to try to define how our information spreads around people and zzzz. Whats really important here it's that you can LEARN through this! Don't you believe me?? try to LEARN this : move </MEMETIC>
+
+              <MAP>Oh, you're talking to me, so you can't access your map! You have to say BYE first. We are in a polite world, right? </MAP>
+              <BYE>I'll be here, take your time!</BYE>
+              <BABYLON>It's where we are!</BABYLON>
+							<UNLOCK_DOOR_ key="UNLOCK_DOOR_" rowUnlock="2" columnUnlock="0">Oh, okay! I'just open the door then!</UNLOCK_DOOR_>
+						</Dialogs>
+					</Npc>
+				</Common>
+			</Npcs>
+			<Items>
+				<Dynamic>
+				</Dynamic>
+				<Static>
+				</Static>
+			</Items>
+		</Room>
+		<Room Row = "1" Column = "0" state="1"> //locked
+			<Description>
+        <ENTRY>A Large white Room. </ENTRY>
+					<ROOM>A cool place</ROOM>					
+			</Description>
+			<Npcs>
+				<Fightable>
+					
+				</Fightable>
+				<Common>
+					
+				</Common>
+			</Npcs>
+			<Items>
+				<Dynamic>
+				<BLACK_KEY> A black key. Maybe opens the door. Should I PICK it?</BLACK_KEY>
+				</Dynamic>
+				<Static>
+          <BLACK_DOOR solvingItem ="BLACK_KEY" rowUnlock="2" columnUnlock="0">A big. Scary. Black door.</BLACK_DOOR>
+				</Static>
+			</Items>
+		</Room>
+		<Room Row = "2" Column = "0" state = "0" final="1" finalDirection="NORTH" > //locked
+			<Description>
+					<ROOM>It's dark here, with a little gap of light ahead.</ROOM>
+          <ENTRY>A strange dark room with a pathway to the north.</ENTRY>
+			</Description>
+			<Npcs>
+				<Fightable>
+          
+				</Fightable>
+				<Common>
+					
+				</Common>
+			</Npcs>
+			<Items>
+				<Dynamic>
+				
+				</Dynamic>
+				<Static>
+          
+        </Static>
+			</Items>
+		</Room>
+	</Level>
+  <Level id = "2" Rows = "3" Columns = "3" playerStartingRow ="0" playerStartingColumn="1">
+    <Room Row = "0" Column = "1" state = "1" >
+      <Description>
+        <ENTRY>A room made with bricks. It's dark</ENTRY>
+        <ROOM>It seems to be an old room. There's a strange structure to the east with a hole near of it. To the north tere's path. </ROOM>
+
+      </Description>
+      <Npcs>
+        <Fightable>
+
+        </Fightable>
+        <Common>
+          
+        </Common>
+      </Npcs>
+      <Items>
+        <Dynamic>
+        </Dynamic>
+        <Static>
+          <HOLE solvingItem ="TORCH" rowUnlock="0" columnUnlock="2">A tiny circular hole.</HOLE>
+        </Static>
+      </Items>
+    </Room>
+    <Room Row = "0" Column = "2" state = "0" >
+      <Description>
+        <ENTRY>A quiet room. There's a man sitting on the floor.</ENTRY>
+        <ROOM>Seems to be a room where someone lives. Maybe the man who's sitting in the middle of the room?</ROOM>
+
+      </Description>
+      <Npcs>
+        <Fightable>
+
+        </Fightable>
+        <Common>
+          <Npc id = "KIND_MAN">
+            <Dialogs>
+              <DEFAULT>I'm sorry. I think I didn't catch what you said...</DEFAULT>
+              <BYE>Have a nice day!</BYE>
+              <raise>May the words flow through you!  </raise>
+              <raised>I don't have nothing more to teach you... Sorry.</raised>
+              <ENTRY>Hello beautiful stranger, I am the kind man. What can I do for you?</ENTRY>
+              <HELLO>Heelo stranger!</HELLO>
+              <HELP>I see that you are lost here and trying to understand what's happening. But you have to be more specific what do you need help. You dont seems to speak that much</HELP>
+              <SPEAK>Yes? What do you want to speak about ?</SPEAK>
+              <DOOR>I can open the door do 1 2 to you. You just have to ask me to UNLOCK DOOR</DOOR>
+              <CLOSED>Yes, there's a door which is usually closed here, I can open to you if you want to.</CLOSED>
+              <KILL>Oh my, the only one who talks about killing here it's my brother. But he don't get on THAT extreme</KILL>
+              <UNLOCK_DOOR_ key="UNLOCK_DOOR_" rowUnlock="1" columnUnlock="2">I certainly can open the door for you. Not a problem. (Uses a lever hidden in the room and you hear a sound from the west)</UNLOCK_DOOR_>
+              <ANGRY_MAN_>He's... kinda douchebag (dont EVER call him that!), I know. But the angry man it's my brother. I love him above all. Did he told you something bad?</ANGRY_MAN_>
+              <BABYLON>This is the craddle of all civilizations and cultures. You should be proud of being here.</BABYLON>
+              <PROFESSOR>Who?...</PROFESSOR>
+          </Dialogs>
+        </Npc >
+        </Common>
+      </Npcs>
+      <Items>
+        <Dynamic>
+        </Dynamic>
+        <Static>
+          <HOLE solvingItem ="TORCH" rowUnlock="0" columnUnlock="2">A tiny circular hole.</HOLE>
+        </Static>
+      </Items>
+    </Room>
+    <Room Row = "1" Column = "1" state="1">
+      //locked
+      <Description>
+        <ENTRY>It's hot in here... </ENTRY>
+        <ROOM>There is fire in bonfires all over the room. It's kinda hard to breathe, but bareable. There are torchs over the room.</ROOM>
+      </Description>
+      <Npcs>
+        <Fightable>
+
+        </Fightable>
+        <Common>
+
+        </Common>
+      </Npcs>
+      <Items>
+        <Dynamic>
+          <TORCH> A lit torch lying on the floor.</TORCH>
+        </Dynamic>
+        <Static>
+         
+        </Static>
+      </Items>
+    </Room>
+    <Room Row = "1" Column = "2" state = "0" >
+      //locked
+      <Description>
+        <ROOM>There's a strange atmosphere here... Maybe it's the bald man standing in the centre...</ROOM>
+        <ENTRY>An well lit room. A big bald man stands in the centre.</ENTRY>
+      </Description>
+      <Npcs>
+        <Fightable>
+          <Npc id = "ANGRY_MAN" combatLevel = "1">
+            <Dialogs>
+              <DEFAULT>I'm losing my nerve...</DEFAULT>
+              <ENTRY>What do you want?!</ENTRY>
+              <KIND_MAN_>DO YOU KNOW MY BROTHER?! WHAT DID HE TALKED ABOUT ME??</KIND_MAN_>
+              <run>You better do that... Chicken.</run>
+              <DOUCHEBAG>I'm going to kill you! Combat me!!!</DOUCHEBAG>
+              <BYE>Never come back!!</BYE>
+              <raised>No smart moves with me!</raised>
+              <raise>What was that??</raise>
+              <lose>Loser, better run away...You can't hurt me with that</lose>
+              <OPEN rowUnlock="2" columnUnlock="2"> A strike of luck...</OPEN>
+            </Dialogs>
+          </Npc>
+        </Fightable>
+        <Common>
+
+        </Common>
+      </Npcs>
+      <Items>
+        <Dynamic>
+
+        </Dynamic>
+        <Static>
+        </Static>
+      </Items>
+    </Room>
+  <Room Row = "2" Column = "2" state = "0" final="1" finalDirection="WEST"  >
+      //locked
+      <Description>
+        <ROOM>A carpet on the floor. And seems to be an strange presence here...</ROOM>
+        <ENTRY>A common room with nothing special. It seems to have a staircase to the left. But the air sure smells different...</ENTRY>
+      </Description>
+      <Npcs>
+        <Fightable>
+          
+        </Fightable>
+        <Common>
+          <Npc id = "PROFESSOR" combatLevel = "1">
+            <Dialogs>
+              <DEFAULT>Nothing special to talk about</DEFAULT>
+              <ENTRY>Don't mind me. Just go forward</ENTRY>
+              <BYE>Yes! You must continue!</BYE>
+            </Dialogs>
+          </Npc>
+        </Common>
+      </Npcs>
+      <Items>
+        <Dynamic>
+
+        </Dynamic>
+        <Static>
+        </Static>
+      </Items>
+    </Room>
+  </Level>
+	<Level id = "3" Rows = "3" Columns = "1" playerStartingRow ="0" playerStartingColumn="0">
+    <Room Row = "0" Column = "0" state = "1" >
+      <Description>
+        <ENTRY>A open area, what?</ENTRY>
+        <ROOM>
+          A large open area with cliffs. There's nowhere to go but a cliff on the north.
+        </ROOM>
+
+      </Description>
+      <Npcs>
+        <Fightable>
+
+        </Fightable>
+        <Common>
+          <Npc id = "EXPLORER" >
+            <Dialogs>
+              <DEFAULT>Beg your pardon?</DEFAULT>
+              <raise>Oh, now you can achieve great heights! </raise>
+              <raised>Sorry, can't raise you any longer haha!</raised>
+              <ENTRY>Howdy mate!</ENTRY>
+              <HELLO>Hey there! Nice day for a clib, right?</HELLO>
+              <CLIFFS>Well, this resumes this area very well! You can't go forward without climbing them!</CLIFFS>
+              <CLIMB>You can climb it, you have the right MOVE !</CLIMB>
+              <BYE>Good luck with your climbing!</BYE>
+              <BABYLON>What's that?</BABYLON>
+              <CLIMB_CLIFF_ >Well, you have to figure this out by yourself!</CLIMB_CLIFF_>
+            </Dialogs>
+          </Npc>
+        </Common>
+      </Npcs>
+     <Items>
+        <Dynamic>
+
+        </Dynamic>
+        <Static>
+        </Static>
+      </Items>
+    </Room>
+    <Room Row = "1" Column = "0" state = "3" >
+			<Description>
+        <ENTRY>A large cliff which contains a small wooden deck with a table and a.... recepcionist? Actually, it seens more like a small office made in the middle of nowhere. </ENTRY>
+				<ROOM>Why there's a recepcionist here?? It's a room with some decoration.</ROOM>
+        <RECEPCIONIST>A recepcionist sitting on a desk. In the middle of nowhere. Behind of him there's a door. A dorr that seems to connect to nothing</RECEPCIONIST>
+        <DESK>The desk looks pretty, though.</DESK>
+        <DECORATION>The decorations looks nice, with tons of stuff. There's an inverse pyramid model with a plate.</DECORATION>
+        <CLIFF>The cliff have grass and a nice appearence. There are some animals running around here! There's a big monument displayed here.</CLIFF>
+        <DOOR>A common door, despite the fact that it seems to connect to nothing.</DOOR>
+        <MONUMENT> A big monument of a man with his hands raised to the air saying : PERSIST THROUGH TIME</MONUMENT>
+			</Description>
+			<Npcs>
+				<Fightable>
+				
+				</Fightable>
+				<Common>
+					<Npc id = "RECEPCIONIST" >
+						<Dialogs>
+              <DEFAULT>Beg your pardon?</DEFAULT>
+              <raise>Now you can talk a lot! </raise>
+              <raised>I don't think I can teach you anything else.</raised>
+							<ENTRY>Professor office, how can I help you?</ENTRY>
+							<HELLO>Hey there, do you have an appointment?</HELLO>
+              <HOURGLASS>It should speak for itself!</HOURGLASS>
+              <CLOCK> It should speak for itself!</CLOCK>
+              <TIME>It should speak for itself!</TIME>
+              <PROFESSOR>The professor it'a very busy man, can you state your business? Unless it's someone very important, I can't let you in, sorry!</PROFESSOR>
+              <SEE>See who?</SEE>
+              <LET_ME_IN_>I can't let you in if you are not one Hat Brothers. Only they can see the professor.</LET_ME_IN_>
+              <BYE>See you later!</BYE>
+              <BABYLON>The enterprise BABYLON Tm is owned by Hat Brothers ltda. Builded as an experimental lab for... Oh, that's confidential, sorry!</BABYLON>
+							<HAT_BROTHERS_ >The Hat Brothers is a company guided only for one thing: The desire to know more us, humans! The company runs researches aiming to analize our behaviour in extremes situations.</HAT_BROTHERS_>
+              <EXPERIMENT>Our experiments are run with the most advanced technology developed by man until now! Everything is 100% secure with 98% satisfaction! </EXPERIMENT>
+              <TECHNOLOGY> Our technology is developed and used by us, using the empiric first thought of the Lone Brother. </TECHNOLOGY>
+              <LONE_BROTHER_>The start of everything.</LONE_BROTHER_>
+              
+            <PERSIST_THROUGH_TIME_ key="PERSIST_THROUGH_TIME_" rowUnlock="2" columnUnlock="0">Shall us all. You can come in, sir.</PERSIST_THROUGH_TIME_>
+						</Dialogs>
+					</Npc>
+				</Common>
+			</Npcs>
+			<Items>
+				<Dynamic>
+           <HOURGLASS> An working hourglass. The sands are falling but never seems to decrease. Strange... There's a small plate wich says : "Time it's not the enemy if you are never dated." </HOURGLASS>
+				</Dynamic>
+				<Static>
+          <PYRAMID solvingItem ="" rowUnlock="0" columnUnlock="0">Seems to be a model of something. Beautiful. There's a smmal plate in it.</PYRAMID>
+          <PYRAMID_PLATE solvingItem ="" rowUnlock="0" columnUnlock="0"> " Made by the one and true brother of us all". Hmm interesting.</PYRAMID_PLATE>
+          <CLOCK solvingItem ="" rowUnlock="0" columnUnlock="0">It seems broken. There's only one pointer, and it's not moving. Maybe it's broken?</CLOCK>
+          <MINIATURE solvingItem ="" rowUnlock="0" columnUnlock="0">A miniature of the big monument displayed in the cliff.</MINIATURE>
+        
+				</Static>
+			</Items>
+		</Room>
+		<Room Row = "0" Column = "0" state = "1" >
+      <Description>
+        <ENTRY>A open area, what?</ENTRY>
+        <ROOM>
+          A large open area with cliffs. There's nowhere to go but a cliff on the north.
+        </ROOM>
+
+      </Description>
+      <Npcs>
+        <Fightable>
+
+        </Fightable>
+        <Common>
+          <Npc id = "EXPLORER" >
+            <Dialogs>
+              <DEFAULT>Beg your pardon?</DEFAULT>
+              <raise>Oh, now you can achieve great heights! </raise>
+              <raised>Sorry, can't raise you any longer haha!</raised>
+              <ENTRY>Howdy mate!</ENTRY>
+              <HELLO>Hey there! Nice day for a clib, right?</HELLO>
+              <CLIFFS>Well, this resumes this area very well! You can't go forward without climbing them!</CLIFFS>
+              <CLIMB>You can climb it, you have the right MOVE !</CLIMB>
+              <BYE>Good luck with your climbing!</BYE>
+              <BABYLON>What's that?</BABYLON>
+              <CLIMB_CLIFF_ >Well, you have to figure this out by yourself!</CLIMB_CLIFF_>
+            </Dialogs>
+          </Npc>
+        </Common>
+      </Npcs>
+     <Items>
+        <Dynamic>
+
+        </Dynamic>
+        <Static>
+        </Static>
+      </Items>
+    </Room>
+    <Room Row = "2" Column = "0" state = "0" final="1" finalDirection="NORTH">
+			<Description>
+        <ENTRY>Passing through the door, theres a ladder to the north.</ENTRY>
+				<ROOM>Just a ladder going up.</ROOM>
+			</Description>
+			<Npcs>
+				<Fightable>
+				
+				</Fightable>
+				<Common>
+					
+            
+				</Common>
+			</Npcs>
+			<Items>
+				<Dynamic>
+				</Dynamic>
+				<Static>
+
+          
+				</Static>
+			</Items>
+		</Room>
+	</Level>
+<Level id = "4" Rows = "3" Columns = "1" playerStartingRow ="0" playerStartingColumn="0">
+   
+		<Room Row = "0" Column = "0" state = "1" >
+      <Description>
+        <ENTRY>The professor it's standing in the center.</ENTRY>
+        <ROOM>The professor it's standing in the center.</ROOM>
+
+      </Description>
+      <Npcs>
+        <Fightable>
+
+        </Fightable>
+        <Common>
+          <Npc id = "PROFESSOR" >
+            <Dialogs>
+              <DEFAULT>Doesn't matter, anyway.</DEFAULT>
+              <ENTRY>Hello Foo. This is the end! Simple as this.</ENTRY>
+              <END>Yes, the end! Seems kinda extreme, right?. But don't worry. I'll try to explain everything to you. You're Foo. A temporary existence. Builded only to prove a point, a concept. You not actually "real"</END>
+              <REAL>What's reality? Something that you are, or something that you feel? What is "to be"? This is what Babylon about. We emulate existence. Analise what happens and procees all the data. That's why time don't exist here.</REAL>
+              <FOO>Why Foo? Seems disposable, right?</FOO>
+              <BYE>Well, you don't have much to do. Only wait to be ceased. Bye bye! See you on the next run!</BYE>
+            </Dialogs>
+          </Npc>
+        </Common>
+      </Npcs>
+     <Items>
+        <Dynamic>
+
+        </Dynamic>
+        <Static>
+        </Static>
+      </Items>
+    </Room>
+    
+	</Level>
+</TextAdventure>
